@@ -1,5 +1,7 @@
 $(document).ready(function() {
+  $(".container").hide();
   $("#add-user").click(function() {
+  $(".container").show();
     $("#sign-up-form").toggle();
     $("#add-user").toggle();
     var config = {
