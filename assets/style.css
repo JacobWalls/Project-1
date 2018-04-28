@@ -9,12 +9,19 @@ body {
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
+}
+
+.container {
     opacity: .7;
 }
+
+.navbar {
+    opacity: .9;
+}
+
 .navbar-text {
     font-size: 30px;
     padding-right: 10px;
-
 }
 
 #logo{
