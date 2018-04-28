@@ -1,5 +1,7 @@
 $(document).ready(function() {
+  $(".container").hide();
   $("#add-user").click(function() {
+    $(".container").show();
     $("#sign-up-form").toggle();
     $("#add-user").toggle();
     var config = {
@@ -59,7 +61,7 @@ $(document).ready(function() {
 
         for (var i = 0; i < results.length; i++) {
 
-          var list = $("<li>").text("Recipe Title:" + results[i].recipe.label + " " + results[i].recipe.url)
+          var list = $("<li>").text("Recipe Title:" + " " + results[i].recipe.label + " " + results[i].recipe.url)
           recipeList.append(list);
         }
         $("#recipes-appear-here").append(recipeList);
