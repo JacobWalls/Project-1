@@ -22,6 +22,11 @@
 
 <body>
 
+
+    <!-- sign up page -->
+
+    <div class="container">
+
     <!-- sign up page --> 
 
 
@@ -36,14 +41,27 @@
                 extra long name
             </a>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Favorites</a>
-                <a class="dropdown-item" href="#">logout</a>
-            </div>
-        </div>
-    </nav>
 
-    <div class="container">
+        <!-- put navbar here -->
+
+        <nav class="navbar" style="background-color: skyblue">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="assets/images/logo 1.png" alt="What's in my Cabinet?">
+            </a>
+            <div class="dropdown show navbar-right">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    extra long name
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Favorites</a>
+                    <a class="dropdown-item" href="#">logout</a>
+                </div>
+            </div>
+        </nav>
+
+
 
         <!-- Search Bar -->
         <div class="row">
@@ -52,13 +70,14 @@
                     <div class="form-group">
                         <label for="ingredients"></label>
                         <div class="input-group mb-3">
-                            <input id="ingrdient-search" type="text" class="form-control" placeholder="What's in your cabinet?" aria-label="Recipient's ingredients" aria-describedby="basic-addon2">
+                            <input id="ingrdient-search" type="text" class="form-control" placeholder="What's in your cabinet?" aria-label="Recipient's ingredients"
+                                aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                              <button class="btn btn-outline-secondary" type="submit" id="recipe-search" style="background-color: white;" >
+                                <button class="btn btn-outline-secondary" type="submit" id="recipe-search" style="background-color: white;">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -106,7 +125,11 @@
 
     </div>
     </div>
-
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="assets/java/java.js"></script>
 </body>
 
 </html>
