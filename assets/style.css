@@ -1,0 +1,29 @@
+
+.jumbotron {
+    font-family: 'Permanent Marker', cursive;
+}
+
+body {
+    background-image: url("http://res.cloudinary.com/codingbootcamp/image/upload/c_fit,h_700/v1524791753/background.jpg");
+    /* background-image: url("images/background.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .7;
+}
+.navbar-text {
+    font-size: 30px;
+    padding-right: 10px;
+
+}
+
+#logo{
+    padding-left: 70px;
+    width: 200px;
+    height: 75px;
+}
+
+.dropdown{
+    padding-right: 70px;
+}
