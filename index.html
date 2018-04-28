@@ -13,7 +13,7 @@
     <!-- Font Awesome CSS Icons (For cool glyphicons) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <!-- CSS Reference Sheet -->
-    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
     <!-- Moment.js reference -->
@@ -47,10 +47,14 @@
                 <form role="form">
                     <div class="form-group">
                         <label for="ingredients"></label>
-                        <input type="text" class="form-control" id="ingredients" placeholder="What's in your cabinet?">
-                        <button type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="What's in your cabinet?" aria-label="Recipient's ingredients" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                          </div>
                     </div>
                 </form>
             </div>
