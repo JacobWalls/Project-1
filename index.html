@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>What's in my Cabinet?</title>
+    <title>What's in my Kitchen?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -21,9 +21,11 @@
 </head>
 
 <body>
-    
-        <!-- sign up page -->
-        <div class="card-body">
+
+    <!-- sign up page -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card-body" id="start">
                 <form role="form" id="sign-up-form">
                     <div class="form-group row">
                         <label for="name-input">Name:</label>
@@ -41,13 +43,15 @@
                     <button class="btn btn-default" id="add-user" type="button">Sign in here!</button>
                 </form>
             </div>
+        </div>
+    </div>
+
+
 
     <div class="container">
 
-
         <!-- put navbar here -->
-
-        <nav class="navbar" style="background-color: skyblue">
+        <nav class="navbar" style="background-color: rgb(202, 193, 193)">
             <a class="navbar-brand" href="index.html">
                 <img id="logo" src="assets/images/logo 1.png" alt="What's in my Cabinet?">
             </a>
@@ -64,17 +68,15 @@
             </div>
         </nav>
 
-
-
-        <!-- Search Bar -->
+        <!-- search bar -->
         <div class="row">
             <div class="col-sm-12">
-                <form role="form">
+                <form role="form" autocomplete="on">
                     <div class="form-group">
                         <label for="ingredients"></label>
                         <div class="input-group mb-3">
-                            <input id="ingrdient-search" type="text" class="form-control" placeholder="What's in your cabinet?" aria-label="Recipient's ingredients"
-                                aria-describedby="basic-addon2">
+                           <input id="ingrdient-search" type="text" class="form-control" placeholder="What's in your kitchen?" aria-label="Recipient's ingredients"
+                                aria-describedby="basic-addon2" multiple>
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="submit" id="recipe-search" style="background-color: white;">
                                     <i class="fa fa-search"></i>
@@ -88,7 +90,7 @@
 
         <!-- This row will handle all of the retrieved recipes -->
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-6">
                 <br>
 
                 <!-- This panel will initially be made up of a panel and wells for each of the recipes retrieved -->
@@ -104,11 +106,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
 
         <!-- This row will handle all of the retrieved restaurants -->
-        <div class="row">
-            <div class="col-sm-12">
+        <!-- <div class="row"> -->
+            <div class="col-sm-6">
                 <br>
 
                 <!-- This panel will initially be made up of a panel and wells for each of the restaurants retrieved -->
@@ -130,9 +132,9 @@
     </div>
     <!-- jQuery JS -->
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script> 
     <!-- Code to the JavaScript File -->
-    <script src="assets/java/java.js"></script>
+    <script src="assets/java/java.js"></script> 
 </body>
 
 </html>
