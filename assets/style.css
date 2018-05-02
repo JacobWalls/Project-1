@@ -33,3 +33,15 @@ body {
 #add-user {
     float: right;
 }
+
+#sign-up-form {
+    margin: auto;
+    width: 60%;
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: 3px solid blue;
+    background-image: url("../assets/images/knife.png");
+    background-size: 10%;
+    opacity: .8;
+}

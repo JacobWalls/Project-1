@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$.backstretch("http://res.cloudinary.com/codingbootcamp/image/upload/c_fit,h_700/v1524791753/background.jpg");
+
   $(".container").hide();
   $("#add-user").click(function(event) {
     event.preventDefault();
@@ -102,4 +103,4 @@ var yelpqueryURL = "https://api.yelp.com/v3/businesses/search?location=" + userZ
 
 
 
-});
+
