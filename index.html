@@ -23,28 +23,21 @@
 <body>
 
     <!-- sign up page -->
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card-body" id="start">
-                <form role="form" id="sign-up-form">
-                    <div class="form-group row">
-                        <label for="name-input">Name:</label>
-                        <input class="form-control" id="name-input" type="text">
-                    </div>
-                    <div class="form-group row">
-                        <label for="email-input">Email:</label>
-                        <input class="form-control" id="email-input" type="email">
-                    </div>
-                    <div class="form-group row">
-                        <label for="age-input">Zip Code:</label>
-                        <input class="form-control" id="zipcode-input" type="number">
-                    </div>
-                    <br />
-                    <button class="btn btn-default" id="add-user" type="button">Sign in here!</button>
-                </form>
-            </div>
+    <form id="sign-up-form" class="col-sm-4">
+        <div class="form-group">
+            <label for="exampleInputName"></label>
+            <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter User Name">       
         </div>
-    </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1"></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputZipcode"></label>
+            <input type="number" class="form-control" id="exampleInputZipcode" placeholder="Zipcode">
+        </div>
+        <button type="submit" id="add-user" class="btn btn-primary">Sign in</button>
+    </form>
 
 
 
@@ -53,7 +46,7 @@
         <!-- put navbar here -->
         <nav class="navbar" style="background-color: rgb(202, 193, 193)">
             <a class="navbar-brand" href="index.html">
-                <img id="logo" src="assets/images/logo 1.png" alt="What's in my Cabinet?">
+                <img id="logo" src="assets/images/logo 2.png" alt="What's in my Cabinet?">
             </a>
             <div class="dropdown show navbar-right">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -133,6 +126,8 @@
     <!-- jQuery JS -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- get rid of blurriness -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <!-- Code to the JavaScript File -->
     <script src="assets/java/java.js"></script>
 </body>
