@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Bootstrap CSS CDN  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <!-- Font Awesome CSS Icons (For cool glyphicons) -->
@@ -16,29 +17,30 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-    <!-- Moment.js reference -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
 
     <!-- sign up page -->
-    <form id="sign-up-form" class="col-sm-4">
-        <div class="form-group">
-            <label for="exampleInputName"></label>
-            <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter User Name">       
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputZipcode"></label>
-            <input type="number" class="form-control" id="exampleInputZipcode" placeholder="Zipcode">
-        </div>
-        <button type="submit" id="add-user" class="btn btn-primary">Sign in</button>
-    </form>
-
+    <div>
+        <form id="sign-up-form" class="col-sm-4">
+            <h3 id="header">Sign up today. It's free.</h3>
+            <div class="error-messages" style="display:none;"></div>
+            <div class="form-group">
+                <label for="exampleInputName"></label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputZipcode"></label>
+                <input type="number" class="form-control" id="exampleInputZipcode" placeholder="enter your zipcode" required>
+            </div>
+            <button type="submit" id="add-user" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
 
 
     <div class="container">
@@ -68,7 +70,7 @@
                     <div class="form-group">
                         <label for="ingredients"></label>
                         <div class="input-group mb-3">
-                           <input id="ingredient-search" type="text" class="form-control" placeholder="What's in your kitchen?" aria-label="Recipient's ingredients"
+                            <input id="ingredient-search" type="text" class="form-control" placeholder="What's in your kitchen?" aria-label="Recipient's ingredients"
                                 aria-describedby="basic-addon2" multiple>
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="submit" id="recipe-search" style="background-color: white;">
@@ -99,10 +101,10 @@
                     </div>
                 </div>
             </div>
-        <!-- </div> -->
+            <!-- </div> -->
 
-        <!-- This row will handle all of the retrieved restaurants -->
-        <!-- <div class="row"> -->
+            <!-- This row will handle all of the retrieved restaurants -->
+            <!-- <div class="row"> -->
             <div class="col-sm-6">
                 <br>
 
@@ -128,6 +130,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <!-- get rid of blurriness -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <!-- form validation
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script> -->
     <!-- Code to the JavaScript File -->
     <script src="assets/java/java.js"></script>
 </body>

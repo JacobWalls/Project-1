@@ -35,13 +35,39 @@ body {
 }
 
 #sign-up-form {
+    font-family: 'Montserrat', sans-serif;
     margin: auto;
     width: 60%;
-    padding: 50px;
-    margin-top: 30px;
+    padding: 60px;
+    margin-top: 180px;
     border-radius: 25px;
-    border: 3px solid blue;
+    border: 3px solid gray;
     background-image: url("../assets/images/knife.png");
     background-size: 10%;
     opacity: .8;
+   
+}
+
+#header{
+    color: black;
+    background-color: gray;
+    border: 2px solid darkgray;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.error-messages{
+    color: red;
+    font-size: 20px;
+    border: 3px solid transparent;
+    background-color: white;
+    text-align: center;
+}
+
+.btn{
+    color: black;
+    background-color: gray;
+    border-radius:10px;
+    border: 2px solid darkgray;
 }
